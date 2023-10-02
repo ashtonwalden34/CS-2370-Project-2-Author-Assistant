@@ -20,22 +20,45 @@ void ExecuteMenu (string userInput, char menuSelection) {
    switch(menuSelection) {
       case 'c':
          GetNumOfNonWSCharacters(userInput);
+         break;
       case 'w':
+         GetNumOfWords(userInput);
          break;
       case 'f':
+         // cin.ignore() then prompt for new text
+         // FindText(userInput, searchText);
          break;
       case 'r':
+         ReplaceExclamation(userInput);
          break;
       case 's':
+         ShortenSpace(userInput);
          break;
       case 'q':
          break;
    }
 }
 
-int GetNumOfNonWSCharacters(string userInput) {
+void GetNumOfNonWSCharacters(string userInput) {
 
 }
+
+void GetNumOfWords(string userInput) {
+   
+}
+
+void FindText(string userInput, string searchText) {
+
+}
+
+void ReplaceExclamation(string userInput) {
+
+}
+
+void ShortenSpace(string userInput) {
+
+}
+
 
 int main() {
    string userInput;
